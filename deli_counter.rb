@@ -3,6 +3,7 @@ def line(array)
   line_today = []
   if array.length >= 1 
     array.each.with_index(1) do |element, index| 
+<<<<<<< HEAD
       line_today.push("#{index}. #{element}")
     end
       puts "The line is currently: #{line_today.join(" ")}"
@@ -24,3 +25,13 @@ def now_serving(katz_deli)
     katz_deli.shift
   end
 end
+=======
+      line_today.push(#{index}. #{element})
+    end
+      puts "The line is currently: #{line_today.join(" ")}"
+    end
+  elsif array.length == 0
+    puts "The line is currently empty."
+  end
+
+>>>>>>> ef18bd2e2f60ca2fea3a8606ebafd4286b4b335a
